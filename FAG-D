@@ -23,7 +23,6 @@ _installMany() {
         #If no packages were added to the "${toInstall[@]}" array,
         #don't do anything and stop this function.
         if [[ "${toInstall[@]}" == "" ]] ; then
-            echo "All packages are already installed.";
              return;
              fi;
 
@@ -40,10 +39,8 @@ sudo systemctl start tor
 
 
 clear
-echo -e "Welcome to the FurAffinity gallery downloader! Please insert the name presented in the URL of the artist you wanna save (example:${RED}dragoneer${NC})"
+echo -e "Welcome to the FurAffinity gallery downloader! Please insert the name presented in the URL of the artist you wanna save (example:dragoneer)"
 read name
-aname='\033[0;34m' #blue color
-NC='\033[0m' #no color
 mkdir $name
 sudo chmod 777 $name
 cd "$name"
