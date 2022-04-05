@@ -1,5 +1,5 @@
 # FurAffinity-gallery-downloader
-A small script to download everything off the gallery of a user from FurAffinity off that one onion site that archives everything ever posted on FA, now made 100% more idiot proof so long as you know how to use the terminal and give the file permissions to the current active user or all users (sudo chmod 777 FAG-D.sh).
+A small script to download everything off the gallery of a user from FurAffinity (including deleted art and galleries from deleted accounts) off that one onion site that archives everything ever posted on FA, now made 100% more idiot proof so long as you know how to use the terminal and give the file permissions to the current active user or all users (sudo chmod 777 FAG-D.sh).
 
 Once that's done, just run it through the terminal and it'll do the rest. 
 
