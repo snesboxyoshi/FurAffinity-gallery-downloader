@@ -33,7 +33,7 @@ _installMany() {
     sudo pacman -S "${toInstall[@]}";
     }
 
-    _installMany "torsocks" "grep" "parallel"
+    _installMany "torsocks" "grep" "parallel" "tor"
 
 sudo systemctl enable tor
 sudo systemctl start tor
