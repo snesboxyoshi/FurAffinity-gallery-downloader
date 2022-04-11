@@ -1,35 +1,35 @@
 _isInstalled() {
-    package="$1";
-    check="$(sudo apt list --installed --color always "${package}" | grep "local" | grep "${package} ")";
+    package="$1"
+    check="$(sudo apt list --installed --color always "${package}" | grep "local" | grep "${package} ")"
     if [ -n "${check}" ] ; then
-        echo 0; #'0' means 'true' in Bash
-        return; #true
-    fi;
-    echo 1; #'1' means 'false' in Bash
-    return; #false
+        echo 0 #'0' means 'true' in Bash
+        return #true
+    fi
+    echo 1 #'1' means 'false' in Bash
+    return #false
     }
 
 _installMany() {
-    toInstall=();
+    toInstall=()
     for pkg; do
         if [[ $(_isInstalled "${pkg}") == 0 ]]; then
-        continue;
-     fi;
+        continue
+     fi
 
         #Otherwise, add it to the list of packages to install.
-        toInstall+=("${pkg}");
-    done;
+        toInstall+=("${pkg}")
+    done
 
         #If no packages were added to the "${toInstall[@]}" array,
         #don't do anything and stop this function.
         if [[ "${toInstall[@]}" == "" ]] ; then
-             return;
-             fi;
+             return
+             fi
 
 
              # Otherwise, install all the packages that have been added to the "${toInstall[@]}" array.
-    printf "Packages not installed:\n%s\n" "${toInstall[@]}";
-    sudo apt-get install "${toInstall[@]}";
+    printf "Packages not installed:\n%s\n" "${toInstall[@]}"
+    sudo apt-get install "${toInstall[@]}"
     }
 
     _installMany "torsocks" "grep" "parallel" "tor" "wget"
