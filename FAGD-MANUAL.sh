@@ -1,5 +1,5 @@
 clear
-echo -e "Welcome to the manual version of the FurAffinity gallery downloader! This version assumes that you have more than 2 brain cells, know how to install the required packages for this to work (torsocks, grep, parallel, tor, wget.), and know how to enable and start the ((tor)) service under whatever thing your distro uses to run services (Since most mainstream distros use systemd, it would be: systemctl enable tor | systemctl start tor."
+echo -e "Welcome to the manual version of the FurAffinity gallery downloader! This version assumes that you have more than 2 brain cells, know how to install the required packages for this to work (torsocks, grep, parallel, tor, wget.), and know how to enable and start the ((tor)) service under whatever thing your distro uses to run services (Since most mainstream distros use systemd, it would be: systemctl enable tor | systemctl start tor)"
 echo ""
 echo "Please insert the name presented in the URL of the artist you wanna save (example:dragoneer)"
 read name
