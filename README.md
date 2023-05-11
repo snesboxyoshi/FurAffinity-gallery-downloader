@@ -9,3 +9,6 @@ If you don't use any of those, yet know how to install packages in your respecti
 
 UPDATE: 3/12/23
 Uuuuuh.... yeah... seems like the original site that used to host the archives has gone down for months now and I have not been able to track down the owner of it to ask what precisely happened. I suppose this script is obsolete now. But if you still need your fix of archived FA content, then try out https://furarchiver.net/.
+
+Update: 5/11/23
+Woop, nvm. I'm rarted. It's just curl being dumb. Though I'd still recommend furarchiver over this dumb script unless the site's down for whatever reason.
