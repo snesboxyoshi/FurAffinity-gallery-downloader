@@ -37,14 +37,9 @@ _installMany() {
 sudo systemctl enable tor
 sudo systemctl start tor
 
-
 clear
 echo -e "Welcome to the FurAffinity gallery downloader! Please insert the name presented in the URL of the artist you wanna save (example:dragoneer)"
 read name
-mkdir $name
-sudo chmod 777 $name
-cd "$name"
-torsocks -P 9050 curl http://g6jy5jkx466lrqojcngbnksugrcfxsl562bzuikrka5rv7srgguqbjid.onion/fa/$name/ | grep -Po '(?<=href=")[^"]*(?=")'| parallel torsocks wget --no-clobber http://g6jy5jkx466lrqojcngbnksugrcfxsl562bzuikrka5rv7srgguqbjid.onion/fa/$name/{}
-clear
-echo "$name's art has been saved in the /$name/ directory where you placed the script. Enjoy the art!"
+torsocks wget -r --no-clobber http://g6jy5jkx466lrqojcngbnksugrcfxsl562bzuikrka5rv7srgguqbjid.onion/fa/$name/
+echo "$name's art has been saved. Enjoy the art!"
 exit
