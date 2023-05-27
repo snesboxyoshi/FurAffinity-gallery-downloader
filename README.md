@@ -6,9 +6,3 @@ Once that's done, just run it through the terminal and it'll do the rest.
 FAGD-ARCH.sh should work on Arch Linux, Manjaro, Steam OS, and any other Arch-based Linux distro out there (excluding Artix Linux as it doesn't use SystemD) while FAGD-DEBIAN.sh should work on debian-based distros like Debian, Ubuntu, Linux Mint, Pop!_OS, ext. I haven't tested the debian out yet as I don't use Debian, but if anyone cares to try it out, let me know if it works as intended.
 
 If you don't use any of those, yet know how to install packages in your respective distro as well as starting up services on whatever thing your distro uses for services, then use the manual version.
-
-UPDATE: 3/12/23
-Uuuuuh.... yeah... seems like the original site that used to host the archives has gone down for months now and I have not been able to track down the owner of it to ask what precisely happened. I suppose this script is obsolete now. But if you still need your fix of archived FA content, then try out https://furarchiver.net/.
-
-Update: 5/11/23
-Woop, nvm. I'm rarted. It's just curl being dumb. Though I'd still recommend furarchiver over this dumb script unless the site's down for whatever reason.
